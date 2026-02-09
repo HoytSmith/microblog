@@ -5,6 +5,13 @@ import sqlalchemy as sa
 from app import app, db
 from app.models import User
 from app.forms import LoginForm, RegistrationForm
+from datetime import datetime, timezone
+
+@app.before_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.last_seen = datetime.now(timezone.utc)
+        db.session.commit()
 
 @app.route('/')
 @app.route('/index')
@@ -61,4 +68,13 @@ def register():
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
-    pass
+
+@app.route('/user/<username>')
+@login_required
+def user(username):
+    user = db.first_or_404(sa.select(User).where(User.username == username))
+    posts = [
+        {'author': user, 'body': 'Test post #1'},
+        {'author': user, 'body': 'Test post #2'}
+    ]
+    return render_template('user.html', user=user, posts=posts)
