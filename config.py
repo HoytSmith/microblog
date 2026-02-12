@@ -12,3 +12,4 @@ class Config:
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['admin@microblogtest.com']
     LANGUAGES = ['en', 'nl']
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
