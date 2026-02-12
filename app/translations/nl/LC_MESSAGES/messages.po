@@ -1,0 +1,243 @@
+# Dutch translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-02-12 11:59+0100\n"
+"PO-Revision-Date: 2026-02-12 11:43+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: nl\n"
+"Language-Team: nl <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app/__init__.py:22
+msgid "Please log in to access this page."
+msgstr "Log alstublieft in om deze pagina te bekijken."
+
+#: app/email.py:20
+msgid "[Microblog] Reset Your Password"
+msgstr "[Microblog] Stel opnieuw je wachtwoord in"
+
+#: app/forms.py:10 app/forms.py:16 app/forms.py:33
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: app/forms.py:11 app/forms.py:18 app/forms.py:59
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: app/forms.py:12
+msgid "Remember Me"
+msgstr "Herinner mij"
+
+#: app/forms.py:13 app/routes.py:50 app/templates/login.html:6
+msgid "Sign In"
+msgstr "Inloggen"
+
+#: app/forms.py:17 app/forms.py:55
+msgid "Email"
+msgstr "Email"
+
+#: app/forms.py:19 app/forms.py:60
+msgid "Repeat Password"
+msgstr "Herhaal Wachtwoord"
+
+#: app/forms.py:20 app/routes.py:69
+msgid "Register"
+msgstr "Registreer"
+
+#: app/forms.py:25 app/forms.py:45
+msgid "Please use a different username."
+msgstr "Gebruik alstublieft een andere gebruikersnaam."
+
+#: app/forms.py:30
+msgid "Please use a different email address."
+msgstr "Gebruik alstublieft een ander email adres."
+
+#: app/forms.py:34
+msgid "About me"
+msgstr "Over mij"
+
+#: app/forms.py:35 app/forms.py:48 app/forms.py:52
+msgid "Submit"
+msgstr "Verstuur"
+
+#: app/forms.py:51
+msgid "Say something"
+msgstr "Zeg iets"
+
+#: app/forms.py:56 app/forms.py:61
+msgid "Request Password Reset"
+msgstr "Wachtwoord Opnieuw Instellen Aanvragen"
+
+#: app/routes.py:26
+msgid "Your post is now live!"
+msgstr "Je bericht is gepubliceerd!"
+
+#: app/routes.py:33 app/templates/base.html:35
+msgid "Home"
+msgstr "Thuis"
+
+#: app/routes.py:43
+msgid "Invalid username or password"
+msgstr "Onjuiste gebruikersnaam of wachtwoord"
+
+#: app/routes.py:67
+msgid "Congratulations, you are now a registered user!"
+msgstr "Gefeliciteerd, u bent nu een geregistreerd gebruiker!"
+
+#: app/routes.py:80
+msgid "Check your email for the instructions to reset your password."
+msgstr "Bekijk je email voor instructies om je wachtwoord opnieuw in te stellen."
+
+#: app/routes.py:82 app/templates/reset_password_request.html:6
+msgid "Reset Password"
+msgstr "Stel wachtwoord opnieuw in"
+
+#: app/routes.py:95
+msgid "Your password has been reset."
+msgstr "Je wachtwoord is opnieuw ingesteld."
+
+#: app/routes.py:119
+msgid "Your changes have been saved."
+msgstr "Aanpassingen zijn opgeslagen."
+
+#: app/routes.py:124 app/templates/edit_profile.html:6
+msgid "Edit Profile"
+msgstr "Profiel Aanpassen"
+
+#: app/routes.py:133 app/routes.py:152
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Gebruiker %(username)s niet gevonden."
+
+#: app/routes.py:136
+msgid "You cannot follow yourself!"
+msgstr "Je kunt jezelf niet volgen!"
+
+#: app/routes.py:140
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "Je volgt nu %(username)s!"
+
+#: app/routes.py:155
+msgid "You cannot unfollow yourself!"
+msgstr "Je kunt jezelf niet ontvolgen!"
+
+#: app/routes.py:159
+#, python-format
+msgid "You are not following %(username)s."
+msgstr "Je volgt %(username)s niet."
+
+#: app/routes.py:172 app/templates/base.html:40
+msgid "Explore"
+msgstr "Verkennen"
+
+#: app/templates/404.html:5
+msgid "Not Found"
+msgstr "Niet Gevonden"
+
+#: app/templates/404.html:9 app/templates/500.html:12
+msgid "Back"
+msgstr "Terug"
+
+#: app/templates/500.html:5
+msgid "An unexpected error has occurred"
+msgstr "Een onverwachte fout is opgetreden."
+
+#: app/templates/500.html:8
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "De systeembeheerder is op de hoogte. Excuses voor het ongemak!"
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s:"
+msgstr "%(username)s zei %(when)s:"
+
+#: app/templates/base.html:12
+msgid "Welcome to Microblog!"
+msgstr "Welkom bij Microblog!"
+
+#: app/templates/base.html:48
+msgid "Login"
+msgstr "Inloggen"
+
+#: app/templates/base.html:54
+msgid "Profile"
+msgstr "Profiel"
+
+#: app/templates/base.html:59
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: app/templates/index.html:6
+#, python-format
+msgid "Hello, %(username)s!"
+msgstr "Hallo, %(username)s!"
+
+#: app/templates/index.html:18 app/templates/user.html:58
+msgid "Newer Posts"
+msgstr "Nieuwere Berichten"
+
+#: app/templates/index.html:23 app/templates/user.html:63
+msgid "Older Posts"
+msgstr "Oudere Berichten"
+
+#: app/templates/login.html:10
+msgid "New user?"
+msgstr "Nieuwe gebruiker?"
+
+#: app/templates/login.html:10
+msgid "Click to Register!"
+msgstr "Klik om te Registreren!"
+
+#: app/templates/login.html:13
+msgid "Forgot your Password?"
+msgstr "Wachtwoord vergeten?"
+
+#: app/templates/login.html:13
+msgid "Click to Reset it"
+msgstr "Klik om opnieuw in te stellen"
+
+#: app/templates/reset_password.html:6
+msgid "Reset your Password"
+msgstr "Stel wachtwoord opnieuw in"
+
+#: app/templates/user.html:11
+msgid "User"
+msgstr "Gebruiker"
+
+#: app/templates/user.html:20
+msgid "Last seen on"
+msgstr "Laatst gezien"
+
+#: app/templates/user.html:24
+#, python-format
+msgid "%(count)d followers"
+msgstr "%(count)d volgers"
+
+#: app/templates/user.html:24
+#, python-format
+msgid "%(count)d following"
+msgstr "%(count)d volgend"
+
+#: app/templates/user.html:29
+msgid "Edit your Profile"
+msgstr "Pas Profiel aan"
+
+#: app/templates/user.html:36
+msgid "Follow"
+msgstr "Volg"
+
+#: app/templates/user.html:43
+msgid "Unfollow"
+msgstr "Ontvolg"
+
